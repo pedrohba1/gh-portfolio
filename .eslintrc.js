@@ -16,6 +16,20 @@ module.exports = {
         ecmaVersion: 11,
         sourceType: "module",
     },
+    settings: {
+        "import/resolver": {
+            "babel-plugin-root-import": [
+                {
+                    rootPathPrefix: "~",
+                    rootPathSuffix: "src",
+                },
+                {
+                    rootPathPrefix: "!",
+                    rootPathSuffix: "src/components",
+                },
+            ],
+        },
+    },
     plugins: ["react", "prettier"],
     rules: {
         "prettier/prettier": "error",
