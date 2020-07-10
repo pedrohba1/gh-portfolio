@@ -11,6 +11,8 @@ export const Container = styled.div`
 export const VideoContainer = styled.div`
     position: fixed;
     min-width: 100%;
+    object-fit: contain;
+
     min-height: 100%;
 `;
 
@@ -28,7 +30,14 @@ export const Overlay = styled.div`
 `;
 
 export const Video = styled.video`
-    object-fit: cover;
+    object-fit: fill;
+    min-width: 100%;
+    resize: vertical;
+    overflow: auto;
+    x: 300px;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     resize: horizontal;
 `;
 
