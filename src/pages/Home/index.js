@@ -5,17 +5,21 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import PixPlugin from "gsap/PixiPlugin";
 
 import LazyLoad from "react-lazy-load";
-import { VideoContainer, Container, Video, Overlay } from "./styles";
+import { VideoContainer, Container, Video, Overlay, Card } from "./styles";
 
 import banner from "~/assets/banner.mp4";
 
 function Home() {
     let videoRef = useRef(null);
 
+    let cardRef = useRef(null);
+
     useEffect(() => {
         gsap.registerPlugin(PixPlugin);
-        gsap.from(videoRef, 1, { webkitFilter: "brightness(0    %)" });
+        gsap.from(videoRef, 1, { webkitFilter: "brightness(0%)" });
         gsap.to(videoRef, 3, { webkitFilter: "brightness(100%)" });
+
+        gsap.from(cardRef, 5, { x: 700, ease: "power3" });
     });
 
     return (
@@ -33,7 +37,16 @@ function Home() {
                 </Video>
 
                 <Overlay>
-                    <h1>teste</h1>
+                    <Card
+                        ref={(el) => {
+                            cardRef = el;
+                        }}
+                    >
+                        <h1> Welcome to my personal portfolio</h1>
+                        <h3>
+                            These are all my projects done until recent day.
+                        </h3>
+                    </Card>
                 </Overlay>
             </VideoContainer>
         </Container>
