@@ -10,8 +10,6 @@ export const Container = styled.div`
 
 export const VideoContainer = styled.div`
     position: fixed;
-    right: 0;
-    bottom: 0;
     min-width: 100%;
     min-height: 100%;
 `;
@@ -30,15 +28,15 @@ export const Overlay = styled.div`
 `;
 
 export const Video = styled.video`
-    width: auto;
-    height: auto;
+    object-fit: cover;
+    resize: horizontal;
 `;
 
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 25%;
+    width: 800px;
+    height: 300px;
     align-self: center;
     border-radius: 5px;
     text-align: center;
