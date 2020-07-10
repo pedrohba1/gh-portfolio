@@ -31,6 +31,7 @@ export const Overlay = styled.div`
     height: 100%;
     align-content: center;
     justify-content: center;
+    resize: initial;
 `;
 
 export const Video = styled.video`

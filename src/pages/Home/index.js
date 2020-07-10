@@ -15,10 +15,6 @@ function Home() {
     let cardRef = useRef(null);
 
     useEffect(() => {
-        gsap.registerPlugin(PixPlugin);
-        gsap.from(videoRef, 1, { webkitFilter: "brightness(0%)" });
-        gsap.to(videoRef, 3, { webkitFilter: "brightness(100%)" });
-
         gsap.from(cardRef, 5, { x: 700, ease: "power3" });
     });
 
