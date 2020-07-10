@@ -30,7 +30,8 @@ export const Overlay = styled.div`
 `;
 
 export const Video = styled.video`
-    width: 100%;
+    width: auto;
+    height: auto;
 `;
 
 export const Card = styled.div`

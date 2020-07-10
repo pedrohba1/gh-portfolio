@@ -23,7 +23,7 @@ function Home() {
                     videoRef = el;
                 }}
             >
-                <Video loop autoPlay>
+                <Video loop autoPlay muted>
                     <source src={banner} type="video/mp4" />
                     <track kind="subtitles" srcLang="en" label="English" />
                     Your browser does not support the video tag.
