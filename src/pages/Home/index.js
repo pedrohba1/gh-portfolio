@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import PixPlugin from "gsap/PixiPlugin";
 
-import LazyLoad from "react-lazy-load";
 import { VideoContainer, Container, Video, Overlay, Card } from "./styles";
 
 import banner from "~/assets/banner.mp4";
@@ -27,7 +25,6 @@ function Home() {
             >
                 <Video loop autoPlay>
                     <source src={banner} type="video/mp4" />
-                    <source src={banner} type="video/ogg" />
                     <track kind="subtitles" srcLang="en" label="English" />
                     Your browser does not support the video tag.
                 </Video>

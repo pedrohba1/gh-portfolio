@@ -8,11 +8,6 @@ export const Container = styled.div`
     text-align: center;
 `;
 
-export const Banner = styled.div`
-    width: 100%;
-    background: #444;
-`;
-
 export const VideoContainer = styled.div`
     position: fixed;
     right: 0;
@@ -36,7 +31,6 @@ export const Overlay = styled.div`
 
 export const Video = styled.video`
     width: 100%;
-    display: block;
 `;
 
 export const Card = styled.div`
